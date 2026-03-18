@@ -10,5 +10,8 @@ Below is the requirements and specifications of this project.
 Tech Used: Python
 For this project, I used a mixture of Python and 
 
+# How to Run Reading List
+
+
 # Sources
 All resources I used to complete this project.
