@@ -4,5 +4,5 @@ The following is a terminal program that allows users to create and update a rea
 
 # Project Overview
 Below is the requirements and specifications of this project. 
-![Project Overview] (Project-Overview.png)
+![Project Overview](Project-Overview.png)
 
