@@ -9,6 +9,9 @@ Below is the requirements and specifications of this project.
 
 Tech Used: Python
 For this project, I used a mixture of Python for the backend and HMTL for the frontend. For the UI framwework, I used Flask as it is super lighteeight which is ideal given the size of this project. 
+Persisting Data: JSON File
+I chose to store the data in a JSON as it integreated the easiest with my framework and made sense with the scale of the project. 
+
 
 # How to Run Reading List
 TO start running reading list, make sure that you have Flask installed.
