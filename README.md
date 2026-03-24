@@ -12,10 +12,14 @@ For this project, I used a mixture of Python for the backend and HMTL for the fr
 
 # How to Run Reading List
 TO start running reading list, make sure that you have Flask installed.
+
 - pip3 install flask
+  
 Make sure the html file is included in a file named templates inside the "Reading List" directory.
 Run project with:
+
 - python3 app.py
+
 Copy the output URL (example: http://127.0.0.1:5000)
 The output should be a reading list web application.
 
