@@ -14,6 +14,16 @@ I chose to store the data in a JSON as it integreated the easiest with my framew
 
 
 # How to Run Reading List
+There are 2 versions of the project included in this repository. The first, version 1, is a simple terminal project that saves user information to a text file to persist data. The files for this project are:
+
+- readingListLogic.py
+- readingList.py
+
+Version 2, the main version of this project, utilizes the Flask framework to create a web application. The files for this project are:
+
+- app.py
+- reading_list.html
+
 TO start running reading list, make sure that you have Flask installed.
 
 - pip3 install flask
