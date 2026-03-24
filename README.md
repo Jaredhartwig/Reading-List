@@ -39,5 +39,4 @@ The output should be a reading list web application.
 # Sources
 All resources I used to complete this project.
 - https://stackoverflow.com/questions/415192/best-way-to-create-a-simple-python-web-service
-- I used Copilot for a portion of the HTML file to integreate Flask properly and to update the "Delete" buttons so they were more
-  user friendly
+- I used Copilot for a portion of the HTML file to integreate Flask properly and to create app.py for quick prototyping ofnthe project once I had completed version 1.
