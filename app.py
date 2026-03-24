@@ -39,7 +39,21 @@ def add_book():
     notes = request.form.get('notes', '').strip()
     status = request.form.get('status', 'n')
 
+    # don't add empty titles
+    if not title:
+        return redirect(url_for('index'))
+
     lst = load_list()
+    title_key = title.strip().lower()
+    # check for duplicate title (case-insensitive)
+    for item in lst:
+        if not item:
+            continue
+        existing_title = item[0] if len(item) > 0 else ''
+        if existing_title.strip().lower() == title_key:
+            # duplicate found; skip adding
+            return redirect(url_for('index'))
+
     lst.append([title, author, notes, status])
     save_list(lst)
 
@@ -64,6 +78,24 @@ def update_book():
             item.append('')
         item[3] = status
         lst[i] = item
+        save_list(lst)
+
+    return redirect(url_for('index'))
+
+
+@app.route('/delete-book', methods=['POST'])
+def delete_book():
+    idx = request.form.get('index')
+    if idx is None or idx == '':
+        return redirect(url_for('index'))
+    try:
+        i = int(idx)
+    except ValueError:
+        return redirect(url_for('index'))
+
+    lst = load_list()
+    if 0 <= i < len(lst):
+        lst.pop(i)
         save_list(lst)
 
     return redirect(url_for('index'))
